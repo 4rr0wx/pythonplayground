@@ -3,6 +3,7 @@
 #einheit2: Einheit in die Umgerechnet werden soll
 #temp1: Temperatur, welche umgerechnet werden soll
 #temp2: umgerechnete Temperatur
+
 print("Tempconverter V0.1 \n")
 print("Mit diesem Programm kann man jede Temperatureinheit in jede andere Temperatureinheit umwandeln \n")
 print("Bitte Starteinheit auswählen: \n 1: Celsius \n 2: Fahrenheit \n 3:Kelvin")
@@ -22,6 +23,7 @@ temp1 = input("Bitte erste Temperatur in der gewählten Einheit eingeben:\n") #T
 print("Eingegebene Temperatur:", temp1)
 
 
+
 #Abfragen worauf umgerechnet werden soll
 if einheit1 == 1: #Celsius
     einheit2 = input("Bitte 2. Einheit wählen:\n 1: Fahrenheit\n 2: Kelvin\n")
@@ -32,6 +34,10 @@ if einheit1 == 1: #Celsius
         einheit2 = input("\n Einheit:")
         print("Gewählte Einheit:", einheit2)
         einheit2 = float(einheit2)
+    
+    if einheit2 == 1: #Fahrenheit
+        temp2 = (1 °C × 9/5) + 32
+    elif einheit2 == 2: #Kelvin
 
 
 elif einheit1 == 2: #Fahrenheit
