@@ -15,10 +15,35 @@ while einheit1 < 0 or einheit1 > 3:
     einheit1 = float(einheit1)
 
 temp1 = input("Bitte erste Temperatur in der gewählten Einheit eingeben:\n")
-print("Eingegebene Tamperatur:", temp1)
+print("Eingegebene Temperatur:", temp1)
 
-if einheit1 = 1:
+if einheit1 == 1:
+    einheit2 = input("Bitte 2. Einheit wählen:\n 1: Fahrenheit\n 2: Kelvin\n")
+    einheit2 = float(einheit2)
 
-elif einheit1 = 2:
+    while einheit2 < 0 or einheit2 > 2:
+        print("Falsche Auswahl! \n Bitte Wiederholen")
+        einheit2 = input("\n Einheit:")
+        print("Gewählte Einheit:", einheit2)
+        einheit2 = float(einheit2)
 
-elif einheit1 = 3:
+
+elif einheit1 == 2:
+    einheit2 = input("Bitte 2. Einheit wählen:\n 1: Celsius\n 2: Kelvin\n")
+    einheit2 = float(einheit2)
+
+    while einheit2 < 0 or einheit2 > 2:
+        print("Falsche Auswahl! \n Bitte Wiederholen")
+        einheit2 = input("\n Einheit:")
+        print("Gewählte Einheit:", einheit2)
+        einheit2 = float(einheit2)
+
+elif einheit1 == 3:
+    einheit2 = input("Bitte 2. Einheit wählen:\n 1: Fahrenheit\n 2: Celsius \n")
+    einheit2 = float(einheit2)
+
+    while einheit2 < 0 or einheit2 > 2:
+        print("Falsche Auswahl! \n Bitte Wiederholen")
+        einheit2 = input("\n Einheit:")
+        print("Gewählte Einheit:", einheit2)
+        einheit2 = float(einheit2)
