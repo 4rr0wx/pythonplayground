@@ -55,6 +55,14 @@ elif einheit1 == 2:
         print("Gewählte Einheit:", einheit2)
         einheit2 = float(einheit2)
 
+    if einheit2 == 1:  # Celsius
+        temp2 = (temp1 - 32) * 5/9
+        print(temp2, "C")
+    elif einheit2 == 2:  # Kelvin
+        temp2 = (temp1 - 32) * 5/9 + 273.15
+        print(temp2, "K")
+
+
 # Kelvin
 elif einheit1 == 3:
     einheit2 = input("Bitte 2. Einheit wählen:\n 1: Fahrenheit\n 2: Celsius \n")
@@ -65,3 +73,5 @@ elif einheit1 == 3:
         einheit2 = input("\n Einheit:")
         print("Gewählte Einheit:", einheit2)
         einheit2 = float(einheit2)
+
+    
